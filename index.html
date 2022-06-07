@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form id="myForm">
+            <div id="inp-1">
+                <label for="fullName">Full Name: </label>
+                <input type="text" id="fullName" name="Full Name" placeholder="Enter full name" onkeyup="validateName()">
+                <p id="showFullNameError"></p>
+            </div>
+            <div id="inp-2">
+                <label for="emailID">Email ID: </label>
+                <input type="text" id="emailID" name="Email" placeholder="Enter email id">
+                <p id="showFullEmailError"></p>
+            </div>
+            <div id="inp-3">
+                <label for="countryList">Country</label>
+                <select name="Country" id="countryList"></select>
+            </div>
+            <div id="inp-4">
+                <label for="mobileNumber">Mobile Number:</label>
+                <select name="Country" id="countryCode"></select>
+                <input type="number" name="Mobile Number" id="mobileNumber" placeholder="Enter mobile number">
+            </div>
+            <div id="inp-5"></div>
+        </form>
+    </section>
+
+    <script src="./logic.js"></script>
+</body>
+</html>
